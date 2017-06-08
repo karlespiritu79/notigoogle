@@ -1,0 +1,23 @@
+body {
+	margin: 0 auto;
+	width: 80%;
+}
+
+#greet{
+	text-align:center;
+	
+}
+
+#date{
+	margin-top:20px;
+	float:left;
+	width:30%;
+	color:blue;
+}
+
+#time{
+	margin-top:20px;
+	float:right;
+	width: 20%;
+	color:blue;
+}
