@@ -1,69 +1,51 @@
-* {
-	margin: 0;
-	padding: 0;
+body {
+	margin:0 auto;
+	width: 80%;
 }
 
-*::selection {
-	background-color: #76323F;
+#greet{
+	text-align:center;
 }
 
-body{
-	background-color:#ff80d5;
-	font-family: 'Libre Baskerville', serif;
+#date{
+	margin-top:10px;
+	float:left;
+	width:30%;
+	color:blue;
 }
 
-nav{
-	color: black;
-	background-color: white;
+#time{
+	margin-top:10px;
+	float:right;
+	width: 20%;
+	color:blue;
 }
-
-ul{
-	list-style-type: none;
+#refreshbutton{
+	margin-top:10px;
+	float:left;
 }
-
-li{
-	display: inline-block;
-	padding: 20px;
+#weather{
+	margin-top:10px;
+	left:100%;
 }
-
-li a{
-	color: #565656;
-	text-decoration: none;
+textarea{
+ 	float:left;
+ 	width:30%;
 }
-
-li:hover {
-	background-color: gray;
+#savedNotes{
+	float:left;
+	position:relative;
+	height:150px;
+	width:30%;
+	overflow: scroll;
 }
-
-
-.{
-	float: right;
+#clearNotes{
+position:relative;
+width:20px;
 }
-
-.{
-	float: left;
+#outputbutton{
+	width:10%;
 }
-
-img{
-	margin-top: 45px;
-	transition: 400ms ease-in-out;
-	height: 400px;
-}
-
-img:hover{
-	transform: scale(1.2);
-	cursor: pointer;
-}
-a{
-	text-decoration: none;
-	color: black;
-}
-
-p.important{
-	position: absolute;
-	top: 600px;
-}
-
-h3.three{
-	font-size: 65px;
+#calandar{
+	float:right;
 }

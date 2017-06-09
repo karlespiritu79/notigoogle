@@ -2,23 +2,50 @@
 <head>
 <title>Homepage</title>
 <link rel="stylesheet" href="style.css">
+<link rel="icon" href="notigoogle.png">
 </head>
 <body>
+<center><h1>(NOT) iGoogle</h1></center>
 <div id="greet">
 </div>
 <div id="date">
 </div>
+<div id="refreshbutton">
+<form>
+<input type="button" value="Refresh" onclick="resetTimeDate()">
+</form>
+</div>
 <div id="time">
 </div>
-<script src="script.js">(function() {
-    var cx = '014888505177923052774:6tgwxaygcdw';
-    var gcse = document.createElement('script');
-    gcse.type = 'text/javascript';
-    gcse.async = true;
-    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(gcse, s);
-  })();</script>
 <gcse:search></gcse:search>
+<div id="weather">
+<span style="display: block !important; width: 320px; text-align: center; font-family: sans-serif; font-size: 12px;">
+<a href="http://www.wunderground.com/cgi-bin/findweather/getForecast?query=zmw:00000.6.71042&bannertypeclick=wu_clean2day" title="Vancouver, British Columbia Weather Forecast" target="_blank">
+<img src="http://weathersticker.wunderground.com/weathersticker/cgi-bin/banner/ban/wxBanner?bannertype=wu_clean2day_both_cond&airportcode=CYVR&ForcedCity=Vancouver&ForcedState=Canada&wmo=71042&language=EN" alt="Find more about Weather in Vancouver, CA" width="300"/></a>
+<br>
+<a href="http://www.wunderground.com/cgi-bin/findweather/getForecast?query=zmw:00000.6.71042&bannertypeclick=wu_clean2day" title="Get latest Weather Forecast updates" style="font-family: sans-serif; font-size: 12px" target="_blank">Click for weather forecast</a></span>
+</div>
+<div id="notes">
+<h1>Notes
+</h1>
+<textarea id="todo" placeholder="Create your own list!"></textarea>
+</div>
+<div id="outputbutton">
+<form>
+<input type="button" value="Output" onclick="saveText()">
+</form>
+</div>
+<div id="savedNotes">
+</div>
+<div id="clearNotes">
+<form>
+<input type="button" value="Clear" onclick="clearText()">
+</form>
+</div>
+<div id="calandar">
+<iframe src="https://calendar.google.com/calendar/embed?src=deltalearns.ca_3hbglr5h25gbqdtgf41g8rgpr4%40group.calendar.google.com&ctz=America/Vancouver" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+</div>
+<script src="script.js">
+</script>
 </body>
 </html>
