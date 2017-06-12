@@ -2,7 +2,7 @@
 <head>
 <title>Homepage</title>
 <link rel="stylesheet" href="style.css">
-<link rel="icon" href="notigoogle.png">
+<link rel="icon" href="favicon.png">
 </head>
 <body>
 <center><h1>(NOT) iGoogle</h1></center>
@@ -26,26 +26,19 @@
 <a href="http://www.wunderground.com/cgi-bin/findweather/getForecast?query=zmw:00000.6.71042&bannertypeclick=wu_clean2day" title="Get latest Weather Forecast updates" style="font-family: sans-serif; font-size: 12px" target="_blank">Click for weather forecast</a></span>
 </div>
 <div id="notes">
-<h1>Notes
-</h1>
-<textarea id="todo" placeholder="Create your own list!"></textarea>
-</div>
-<div id="outputbutton">
-<form>
-<input type="button" value="Output" onclick="saveText()">
-</form>
-</div>
+<textarea placeholder="Create your own list!" id="todo"></textarea>
 <div id="savedNotes">
 </div>
-<div id="clearNotes">
-<form>
-<input type="button" value="Clear" onclick="clearText()">
-</form>
-</div>
+<input id="outputbutton" type="button" onclick="saveText()" value="Make note">
+<input id="clearNotes" type="button" onclick="clearText()" value="Clear">
+<input id="makelinks" type="button" value="Add link" onclick="saveLink()">
+<input id="clearlink" type="button" value="Clear links" onclick="clearLinks()">
 <div id="calandar">
-<iframe src="https://calendar.google.com/calendar/embed?src=deltalearns.ca_3hbglr5h25gbqdtgf41g8rgpr4%40group.calendar.google.com&ctz=America/Vancouver" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+<iframe src="https://calendar.google.com/calendar/embed?src=deltalearns.ca_3hbglr5h25gbqdtgf41g8rgpr4%40group.calendar.google.com&ctz=America/Vancouver" style="border: 0" width="512" height="250" frameborder="0" scrolling="no"></iframe>
 </div>
-<script src="script.js">
-</script>
+<div id="savedLinks">
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="script.js"></script>
 </body>
 </html>

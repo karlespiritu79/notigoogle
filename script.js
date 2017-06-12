@@ -1,4 +1,3 @@
-
 var userName = prompt("What is your name?")
 
 function functions(){
@@ -36,7 +35,7 @@ if (m<10){
     m='0'+m
 }
 today = mm+'/'+dd+'/'+yyyy;
-document.getElementById("date").innerHTML = "the current date is "+dayarray[day]+", "+today
+document.getElementById("date").innerHTML = "The current date is "+dayarray[day]+", "+today
 document.getElementById("time").innerHTML = "The time is "+h+":"+m
 }
 function resetTimeDate(){
@@ -57,5 +56,13 @@ function gse() {
 }
 	function clearText(){
 		document.getElementById("savedNotes") .innerHTML = " "
+	}
+	function saveLink(){
+  	var link = prompt("What is your link")
+  	var websiteName = prompt("What is your website called")
+  	document.getElementById("savedLinks").innerHTML+=`<a href="${link}" target="_blank">${websiteName}</a><br>`;
+}
+function clearLinks(){
+		document.getElementById("savedLinks") .innerHTML = " "
 	}
 window.onload=functions()
