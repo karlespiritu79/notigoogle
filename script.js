@@ -22,6 +22,7 @@ var h = today.getHours();
 var m = today.getMinutes();
 var day = today.getDay();
 var dayarray = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
+var twentyfourhours = today.getHours();
 if(dd<10) {
     dd='0'+dd
 } 
@@ -65,4 +66,16 @@ function gse() {
 function clearLinks(){
 		document.getElementById("savedLinks") .innerHTML = " "
 	}
+function nightMode() {
+	var backgroundColour = document.body.style.backgroundColor;
+	//alert(backgroundColour)
+	if(backgroundColour === "rgb(255, 255, 255)"){
+		//alert("255255255")
+		document.body.style.backgroundColor ="rgb(0, 0, 0)";
+	}
+	else if (backgroundColour === "rgb(0, 0, 0)"){
+		//alert("000")
+		document.body.style.backgroundColor = "rgb(255, 255, 255)";
+	}
+}
 window.onload=functions()

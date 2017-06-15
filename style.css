@@ -1,7 +1,7 @@
 body {
 	margin:0 auto;
 	width: 80%;
-	background-image: url("paper.jpg");
+	background-color:#ffffff;
 }
 
 #greet{
@@ -14,7 +14,6 @@ body {
 	margin-top:10px;
 	float:left;
 	width:30%;
-	color:blue;
 }
 
 #time{
@@ -22,7 +21,6 @@ body {
 	margin-top:10px;
 	float:right;
 	width: 20%;
-	color:blue;
 }
 #refreshbutton{
 	position: relative;
@@ -77,4 +75,14 @@ textarea{
 	top:500px;
 	position:relative;
 	float:left;
+}
+#stocks{
+	top:500px;
+	position:relative;
+	float:left;
+}
+#night{
+	position: absolute;
+	width:10%;
+	bottom:30px;
 }
