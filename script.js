@@ -54,7 +54,9 @@ function gse() {
   function saveText(){
   	var text = document.getElementById("todo") .value;
   	document.getElementById("savedNotes").innerHTML += text+"<br>";
-}
+  	if (text === "I want an easter egg!"){
+		document.getElementById("barcode").innerHTML = `<img src="barcode.png">`
+}}
 	function clearText(){
 		document.getElementById("savedNotes") .innerHTML = " "
 	}
@@ -73,7 +75,7 @@ function nightMode() {
 		//alert("255255255")
 		document.body.style.backgroundColor ="rgb(0, 0, 0)";
 	}
-	else if (backgroundColour === "rgb(0, 0, 0)"){
+	else{
 		//alert("000")
 		document.body.style.backgroundColor = "rgb(255, 255, 255)";
 	}

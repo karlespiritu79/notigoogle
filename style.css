@@ -1,9 +1,9 @@
 body {
+	color:gray;
 	margin:0 auto;
 	width: 80%;
 	background-color:#ffffff;
 }
-
 #greet{
 	position: relative;
 	text-align:center;
