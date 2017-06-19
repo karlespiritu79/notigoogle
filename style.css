@@ -59,7 +59,7 @@ textarea{
 	float:right;
 }
 #savedLinks{
-	border: 1px solid black;
+	border: 1px solid grey;
 	position:absolute;
 	top:600;
 	width:30%;
